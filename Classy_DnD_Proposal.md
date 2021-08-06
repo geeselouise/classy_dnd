@@ -71,7 +71,7 @@ ip: A shortened hash of the IP address of the submitter
 **alias**: A friendly alias that correspond to each uniqe name
 
 ## Algorithm:
-- The classification model algorithms for this project that will be tested are: **Logistic Regression, Random Forest, and Support Vector Machine**.
+- The classification model algorithms for this project that will be tested are: **Logistic Regression, Random Forest, and Naive Bayes (Bernoulli and Guassian)**.
 - Classification model evaluation:
     - Confusion Matrix
     - Percision
@@ -84,7 +84,6 @@ ip: A shortened hash of the IP address of the submitter
 - sklearn, pandas, numpy, and matplotlib
 - Tableau for visualization
     - Some EDA has already been done on the dataset. To see the dashboard click [here](https://public.tableau.com/app/profile/louisa.reilly/viz/dnd5e_char/DnD_Char?publish=yes).
-- SQL for data storage
 
 ### Sources/Acknowledgements:
 - Gary Gygax and Dave Arneson for creating DnD.
