@@ -32,7 +32,9 @@ The [**dataset**](https://github.com/oganm/dnddata/blob/master/data-raw/dnd_char
 The classification model algorithms tested for this project were: **Logistic Regression, Random Forest, and Naive Bayes (Bernoulli and Guassian)**. The model evaluation metric of interest was f-1 score. Feature importance rankings were used to determine the impact of novelly added features during refinment. 71 features were ultimately used.
 
 *Model Evaluation and Interpretation*
-An 80/20 train-test split was used on the entire dataset of 9784 character sheets. Since multiclassing is not as commonly used, the models were weighted towards the minority class. The Bernoulli Naive Bayes model outpreformed the Guassian one because a majority of the features were categorical instead of continuous. All metrics given are from the test set.  
+An 80/20 train-test split was used on the entire dataset of 9784 character sheets. Since multiclassing is not as commonly used, the models were weighted towards the minority class. The Bernoulli Naive Bayes model outpreformed the Guassian one because a majority of the features were categorical instead of continuous. All metrics given are from the test set.
+
+
 
 **Logistic Regression Model weighted:**
 - Accuracy = 0.746
@@ -54,6 +56,8 @@ An 80/20 train-test split was used on the entire dataset of 9784 character sheet
 - Precision = 0.304
 - Recall = 0.609
 - ROC AUC = 0.714
+
+![all models roc_auc curve](all_models_mc.png)
 
 *Model/Feature Observations*
 
@@ -77,3 +81,6 @@ In comparison, the Random Forest Model relied mostly on numerical stats, such as
 - Wizards of the Coast(subsidary of Hasbro) which publishes DnD guides.
 - B. Ogan Mancarci for his data collection. [GitRepo](https://github.com/oganm/dnddata)
 - Dan Quach for his 2020 [blogpost](https://towardsdatascience.com/classifying-character-classes-in-dungeons-dragons-with-machine-learning-86751240594d) about creating a classifier using Oganm's dataset.
+
+### Communication:
+![dnd tableau interactive dashboard image](dnd_char_dashboard.png)
